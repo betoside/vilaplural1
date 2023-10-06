@@ -1,0 +1,72 @@
+site 
+
+    rede social
+        instagram 
+        facebook 
+    
+    enxoval de comunicação p o shopping
+    assessoria de imprensa
+    fotografo/video maker (leo)
+
+    google workspace
+
+
+
+---
+admin
+
+responsive 
+    tablet
+    mobile
+
+
+
+---
+Espaços
+de: services
+para: espacos
+
+---
+Atrações
+de: portfolio
+para: atracoes
+
+
+
+----
+FEED, 
+registrar e fazer um arquivo
+
+STORIES, 
+é para quem te segue
+uma conversa rápida, um bom dia.
+
+REELS, 
+pesca de usuário, ele vai para qualquer um que tem interesse no assunto 
+ele não fica apenas no teu público
+
+
+----
+our-client = parceiros
+
+de: images/client1.jpg
+para: images/parceiro1.jpg
+
+
+----
+PARCEIROS
+
+•	Coletivo SHN
+•	EBS - Escola Brasileira de Skate
+•	Instituto Elab
+•	Galeria Alma da Rua
+•	N2s ->>>> RETIRAR
+•	NFT Brasil
+•	Posca
+•	Roller Groove
+
+
+----
+.espaco-card
+de: background: var(--card-bg-color);
+para:    background: var(--card-expor-bg-color);
