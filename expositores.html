@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vila Plural</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css?v=123">
+    <link rel="stylesheet" href="css/panton/style-panton.css?v=123">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <!-- <link rel="manifest" href="/site.webmanifest"> -->
+  </head>
+  <body>
+
+    <!--=======Scroll to top button=======-->
+    <div class="scrollToTop-btn flex-center">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!--=======Header=======-->
+    <header>
+      <div class="logos">
+        <div class="shop-vo"><a href="https://www.shoppingvilaolimpia.com.br/" target="_blank"><img src="images/logo-shopVilaOlimpia.png" alt="Shopping Vila Olímpia"></a></div>
+        <div class="vila-plural"><a href="/"><img src="images/vila-plural.png" alt="Vila Plural"></a></div>
+        <div class="social-media">
+          <a href="https://web.facebook.com/profile.php?id=61551467570221" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/vilaplural" target="_blank"><i class="fab fa-instagram"></i></a>
+          <!-- <a href="mailto:contato@vilaplural.com.br" target="_blank"><i class="fas fa-envelope"></i></a> -->
+        </div>
+      </div>
+      <div class="nav-bar">
+        <div class="navigation">
+          <div class="nav-items">
+          </div>
+        </div>
+        <div class="nav-menu-btn"></div>
+      </div>
+    </header>
+    
+
+    <!--=======Expositores section=======-->
+
+    <section class="expositores section" id="expositores">
+      <div class="container flex-center">
+        <h1 class="section-title-01">Expositores</h1>
+        <h2 class="section-title-02">Expositores</h2>
+        <div class="content noBg">
+          <div class="expositores-description">
+            <p>Entre em contato para ser um expositor na Vila Plural</p>
+          </div>
+          
+
+          <div class="contact-">
+            <h4>Segmento</h4>
+            <br>
+            <form action="PHPMailer-master/expositores_action.php" class="contact-form" method="POST">
+
+              <div class="third-row">
+                <div class="opt-select">
+                  
+                  <label for="armazem">
+                    <input type="checkbox" name="segmento[]" value="armazem" id="armazem" />
+                    Armazem
+                  </label>
+                  <label for="artesanato">
+                    <input type="checkbox" name="segmento[]" value="artesanato" id="artesanato" />
+                    Artesanato
+                  </label>
+                  <label for="cbd">
+                    <input type="checkbox" name="segmento[]" value="cbd" id="cbd" />
+                    CBD
+                  </label>
+                  
+                  <label for="decoracao">
+                    <input type="checkbox" name="segmento[]" value="decoracao" id="decoracao" />
+                    Decoração
+                  </label>
+                  
+                  <label for="design">
+                    <input type="checkbox" name="segmento[]" value="design" id="design" />
+                    Design
+                  </label>
+                  
+                  <label for="gastronomia">
+                    <input type="checkbox" name="segmento[]" value="gastronomia" id="gastronomia" />
+                    Gastronomia
+                  </label>
+                  
+                  <label for="homes">
+                    <input type="checkbox" name="segmento[]" value="homes" id="homes" />
+                    Home
+                  </label>
+                  
+                  <label for="infantis">
+                    <input type="checkbox" name="segmento[]" value="infantis" id="infantis" />
+                    Infantis
+                  </label>
+                  
+                  <label for="jardim">
+                    <input type="checkbox" name="segmento[]" value="jardim" id="jardim" />
+                    Jardim
+                  </label>
+                  
+                  <label for="moda">
+                    <input type="checkbox" name="segmento[]" value="moda" id="moda" />
+                    Moda
+                  </label>
+                  
+                  <label for="papelaria">
+                    <input type="checkbox" name="segmento[]" value="papelaria" id="papelaria" />
+                    Papelaria
+                  </label>
+
+                  <label for="pets">
+                    <input type="checkbox" name="segmento[]" value="pets" id="pets" />
+                    Pets
+                  </label>
+                  
+                  <input type="text" name="outros" placeholder="Outros" />
+
+                </div>
+              </div>
+
+              <br>
+
+              <div class="first-row- second-row">
+                <input type="text" placeholder="*Nome" name="nome" required>
+                <input type="email" placeholder="*Email" name="email" required>
+              </div>
+
+              <div class="second-row">
+                <input type="text" placeholder="*Marca" name="marca" required>
+                <input type="text" placeholder="www" name="site">
+              </div>
+              
+              <div class="second-row">
+                <input type="text" placeholder="Pessoa Física" name="pessoa_fisica">
+                <input type="text" placeholder="Pessoa Jurídica" name="pessoa_juridica">
+              </div>
+
+              <div class="second-row">
+                <input type="text" placeholder="instagram" name="instagram">
+                <input type="text" placeholder="facebook" name="facebook">
+              </div>
+
+              <div class="second-row">
+                <input type="text" placeholder="e-commerce" name="ecommerce">
+                <input type="text" placeholder="*(99) 99999-9999" name="telefone" required>
+              </div>
+
+              <div class="second-row">
+                <input type="text" placeholder="*Endereço" name="endereco">
+                <input type="text" placeholder="*Bairro" name="bairro">
+              </div>
+
+              <div class="second-row">
+                <input type="text" placeholder="*CEP" name="CEP">
+                <input type="text" placeholder="*Cidade" name="cidade">
+              </div>
+
+              <div class="second-row">
+                <input type="text" placeholder="*UF" name="uf">
+              </div>
+              
+              <div class="third-row">
+                <textarea rows="7" placeholder="Participa de outras feiras? Quais, outras dúvidas ou sugestões" name="mensagem"></textarea>
+              </div>
+
+              <button class="btn" type="submit">Enviar Mensagem <i class="fas fa-papper"></i></button>
+
+            </form>
+          </div>
+
+
+          <!-- <div class="expositores-info">
+            <div class="experience-card">
+              <div class="grupo">
+                <h4><label for="">ARMAZÉM</label></h4>
+                <p>Alkimia</p>
+                <p>Azeites Kochen</p>
+                <p>Bake Sale</p>
+                <p>Bizz</p>
+                <p>Franchello</p>
+                <p>Kiro</p>
+                <p>Sacola Tropical</p>
+                <p>Senhor Acepipes</p>
+                <p>Sucrier</p>
+                <p>Tholci Bakery</p>
+              </div>
+              <div class="grupo">
+                <h4><label for="">ARTE</label></h4>
+                <p>Ale Jordão Estudio</p>
+                <p>Galeria Arte da Rua</p>
+                <p>SHN</p>
+              </div>
+            </div>
+            <div class="experience-card">
+              <div class="grupo">
+                <h4><label for="">BRECHÓ</label></h4>
+                <p>Perry Street 66</p>
+              </div>
+              <div class="grupo">
+                <h4><label for="">CBD</label></h4>
+                <p>Accura</p>
+                <p>Alma Lab CBD</p>
+                <p>Somos Drim</p>
+              </div>
+              <div class="grupo">
+                <h4><label for="">DECOR</label></h4>
+                <p>Bela Mandala</p>
+                <p>By Taninha</p>
+                <p>Chikaoka</p>
+                <p>Hard Decor</p>
+                <p>Mini Graffiti</p>
+                <p>Reza Mundo</p>
+              </div>
+            </div>
+            <div class="experience-card">
+              <div class="grupo">
+                <h4><label for="">JARDIM</label></h4>
+                <p>Terraries</p>
+              </div>
+              <div class="grupo">
+                <h4><label for="">MODA</label></h4>
+                <p>Helena Kavano</p>
+                <p>High High</p>
+                <p>Joly Roger</p>
+                <p>RL Design</p>
+                <p>Truc de Fou</p>
+                <p>Vihe</p>
+              </div>
+              <div class="grupo">
+                <h4><label for="">PAPELARIA</label></h4>
+                <p>Bela Mandala</p>
+                <p>By Taninha</p>
+                <p>Chikaoka</p>
+                <p>Hard Decor</p>
+                <p>Mini Graffiti</p>
+                <p>Reza Mundo</p>
+              </div>
+            </div>
+            <div class="experience-card">
+              <div class="grupo">
+                <h4><label for="">PETS</label></h4>
+                <p>Cansei de Ser Gato</p>
+              </div>
+              <div class="grupo">
+                <h4><label for="">SKATE</label></h4>
+                <p>Ghetto Samurai</p>
+              </div>
+              <div class="grupo">
+                <h4><label for="">TOYS</label></h4>
+                <p>Planeta Ioiô</p>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+    </section>
+        
+    <div class="formConfirmation-model active- flex-center">
+      <div class="formConfirmation-model-body">
+        <img src="images/vila-plural.png" alt="Vila Plural">
+        <p>Sua mensagem foi enviada com sucesso.</p>
+        <p>Em breve entraremos em contato.</p>
+        <p>Muito obrigado.</p>
+        <a href="index.html" class="btn formConfirmation-close-btn">Voltar ao site</a>
+      </div>
+    </div>
+
+
+    <!--=======Footer=======-->
+    <footer>
+      <div class="footer-container">
+
+        <div class="about group">
+          <img src="images/vila-plural-footer.png" alt="">
+        </div>
+        <div class="hr"></div>
+        <div class="info group">
+          <!-- <h3>Mais</h3> -->
+          <ul>
+            <li><a href="#home" class="hidden">home</a></li>
+            <li><a href="#somos">Somos Plural</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#expositores">Expositores</a></li>
+            <li><a href="#espacos">Espaços</a></li>
+            <li><a href="#atracoes">Atrações</a></li>
+            <li><a href="#faq">Faq</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+        <div class="hr"></div>
+        <!-- <hr> -->
+        <div class="follow group">
+          <h3>Siga</h3>
+          <ul>
+            <li><a href="https://web.facebook.com/profile.php?id=61551467570221" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/vilaplural" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="mailto:contato@vilaplural.com.br" target="_blank"><i class="fas fa-envelope"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright group">
+        <p>© 2023 by Vila Plural.</p>
+      </div>
+    </footer>
+
+    <!--=======External scripts=======-->
+    <script src="./js/main.js?v=12"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".client-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Panton Black Caps';
+    src: url('Panton-BlackCaps.woff2') format('woff2'),
+        url('Panton-BlackCaps.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+/*
+css/panton/PantonBlackCaps.otf 
+css/panton/PantonBlackitalicCaps.otf 
+css/panton/PantonLightCaps.otf 
+css/panton/PantonLightitalicCaps.otf
+*/
+
+
+.Panton-BlackCaps {
+    font-family: 'Panton Black Caps';
+    font-weight: 900;
+    font-style: normal;
+}
+
+.fz42{
+    font-size:42px;
+}

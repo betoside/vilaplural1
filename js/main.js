@@ -51,6 +51,29 @@ atracoesCloseBtns.forEach((atracoesCloseBtn) => {
     });
 });
 
+//Confirmation fale conosco - Modal
+const formConfirmation = document.querySelector('.formConfirmation-model');
+const formConfirmationBtn = document.querySelector('.formConfirmation-close-btn');
+formConfirmationBtn.addEventListener('click', ()=>{
+    formConfirmation.classList.remove('active');
+});
+
+function loadFormConfirmation() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const myParam = urlParams.get('formStatus');
+    if(myParam === 'FALE'){
+        formConfirmation.classList.add('active');
+        // https://www.vilaplural.com.br/?formStatus=YEAH
+    }
+    if(myParam === 'EXPOSITOR'){
+        formConfirmation.classList.add('active');
+        // https://www.vilaplural.com.br/?formStatus=EXPOSITOR
+    }
+
+}
+loadFormConfirmation();
+
+
 //Our clients - Swiper
 
 //Website dark/light theme

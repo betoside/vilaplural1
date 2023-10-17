@@ -332,7 +332,7 @@ header .social-media i{
   color: var(--first-color);
   font-size: var(--normal-font-size);
   font-weight: 500;
-  font-family:'SivarPro';
+  font-family: 'Panton Black Caps';
 }
 
 .video .scroll-down i{
@@ -376,7 +376,7 @@ sub-section{
 }
 
 .section-title-01{
-  font-family:'SivarPro';
+  font-family: 'Panton Black Caps';
   font-size: 4.5em;
   font-weight: 800;
   margin-bottom: 2rem;
@@ -387,7 +387,7 @@ sub-section{
 }
 
 .section-title-02{
-  font-family:'SivarPro';
+  font-family: 'Panton Black Caps';
   font-size: 2.5em;
   font-weight: 700;
   transform: translateY(-80px) ;
@@ -456,7 +456,7 @@ section.video{
 }
 
 .about-info .description .somos-tit{
-  font-family: 'SivarPro';
+  font-family: 'Panton Black Caps';
   font-size: 3em;
   font-weight: 700;
   margin-bottom: 30px;
@@ -522,6 +522,11 @@ section.video{
   background-size:contain;
   padding-bottom: 70px;
 }
+
+.expositores .container .content.noBg{
+  background: none;
+}
+
 
 .expositores-description{
   max-width: 700px;
@@ -721,7 +726,7 @@ section.espacos .container-espacos:not(:last-child){
 
 .espaco-list{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
   max-width: 100%;
   margin: 0 auto;
   gap: 20px;
@@ -1182,6 +1187,22 @@ section.contact {
   resize: none;
 }
 
+.contact-form .opt-select {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.contact-form .opt-select label{
+  background: var(--input-color);
+  border-radius: 5px;
+  padding-right: 10px;
+  width: 22%;
+}
+.contact-form .opt-select label input{
+  margin: 10px 5px 10px 10px;
+
+}
+
 ::placehodler{
   color: var(--first-color)
 }
@@ -1205,6 +1226,54 @@ section.contact {
   margin-top: 0;
   border-radius: 5px;
   cursor: pointer;;
+}
+
+
+
+.formConfirmation-model{
+  z-index: 999999;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: var(--transparent-color-01);
+  backdrop-filter: blur(20px);
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s ease;
+}
+
+.formConfirmation-model.active{
+  visibility: visible;
+  opacity: 1;
+}
+
+.formConfirmation-model-body{
+  position: relative;
+  background: var(--modal-bg-color);
+  max-width: 600px;
+  margin: 20px;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  transform: translateY(-50px);
+  transition: .5s ease;
+  text-align: center;
+}
+
+.formConfirmation-model.active .formConfirmation-model-body{
+  transform: translateY(0);
+}
+
+.formConfirmation-model-body h3{
+  font-size: 1.5em;
+}
+
+.formConfirmation-model-body img{
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 10px;
 }
 
 /*=======Footer=======*/
@@ -1471,6 +1540,10 @@ footer a:hover{
     width: 100%;
   }
 
+  .contact-form .opt-select label {
+    width: 30%;
+  }
+
   /*=======Footer=======*/
   footer .footer-container{
     flex-direction: column;
@@ -1556,6 +1629,14 @@ footer a:hover{
   
   .contact-card .contact-btn .btn{
     font-size: 0.8rem;
+  }
+
+  .contact-form .opt-select label {
+    width: 47%;
+  }
+
+  .contact-form .opt-select input[name=outros] {
+    width: 97%;
   }
 
 }
