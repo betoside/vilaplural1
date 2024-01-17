@@ -6,9 +6,9 @@
     <title>VILA PLURAL
       Arte + Dança + Feira + Inovação + Música + Skate</title>
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/style.css?v=1234">
+    <link rel="stylesheet" href="css/style.css?v=123456">
     <link rel="stylesheet" href="css/sivar-pro_woff/style-sivarpro.css">
-    <link rel="stylesheet" href="css/panton/style-panton.css?v=1234">
+    <link rel="stylesheet" href="css/panton/style-panton.css?v=123456">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
@@ -93,7 +93,7 @@
         <div class="navigation">
           <div class="nav-items">
             <div class="nav-close-btn"></div>
-            <a href="#home">Vídeo</a>
+            <a href="#home">Agenda</a>
             <a href="#somos">Somos Plural</a>
             <!-- <a href="#agenda">Agenda</a> -->
             <a href="#expositores">Expositores</a>
@@ -107,20 +107,26 @@
       </div>
     </header>
 
+    <section class="banners-header" id="home">
+      
+      <div class="swiper client-swiper2">
+        <div class="swiper-wrapper">
 
-    <section class="video" id="home">
-      <div class="container flex-center">
-          <video width="" autoplay loop="loop" playsinline muted poster="">
-            <!-- images/area-video.jpg -->
-            <source
-                src="video/202309121241.mp4" 
-                type="video/mp4">
-              Your browser doesn't support HTML5 video tag.
-          </video>
+          <div class="swiper-slide flex-center"><a href="https://apps.apple.com/us/app/multi-promo%C3%A7%C3%B5es-dos-shoppings/id1459566420?mt=8" target="_blank"><img src="./images/banner_ferias2024.jpg" alt=""></a></div>
+          <div class="swiper-slide flex-center"><a href="https://semanavivajaneirobranco.kpages.online/programacao" target="_blank"><img src="./images/banner_janeiro_branco.jpg" alt=""></a></div>
+          
+        </div>
+        
+        <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+        <div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
+        <div class="swiper-pagination"></div>
+
       </div>
+
       <div class="container-scroll-down">
         <a href="#somos" class="scroll-down">Scroll Down <i class="fas fa-arrow-down"></i></a>
       </div>
+
     </section>
 
     <!--=======Somos section=======-->
@@ -1568,6 +1574,26 @@
           prevEl: ".swiper-button-prev",
         },
       });
+      
+
+      var swiper2 = new Swiper(".client-swiper2", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        }
+      });
+      
     </script>
 
   </body>
