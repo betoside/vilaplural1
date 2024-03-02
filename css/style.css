@@ -452,6 +452,11 @@ section.banners-header {
   max-width: 100%;
 }
 
+.banner-marco img {
+  max-width: 100%;
+  width: 100%;
+}
+
 
 /*=======About section=======*/
 .about .container .content{
